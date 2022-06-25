@@ -2,6 +2,20 @@
   display: none;
 }
 
+.home-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-media > div {
+  margin: 10px;
+}
+
+
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -41,6 +55,12 @@
 
 .nav-hamburger-items > a {
   color:grey;
+}
+
+.spotify-player {
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
