@@ -8,7 +8,6 @@ function About() {
 
           Brian was resistant to join the group at first, however after attending one of their practices he gave way to temptation. After playing with the group Brain stated that “He fell in love with music again”. With that, the final piece of the puzzle fell into place. Even though Brian refuses to show up for band photos and be involved in band discussions, he is the most pivotal and crucial member with those big and beefy bass lines. The songs would not be the same without his musical influence.<br/><br/>
         </div>
-        
       </div>
     );
   }

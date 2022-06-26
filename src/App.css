@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 /* End HTML Reset */
+
+
 .about {
   color: white;
   max-width: 750px;
@@ -58,6 +60,42 @@ table {
 
 .App {
   background: #262626;
+}
+
+button {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 10px !important;
+}
+
+button:hover {
+  background-color: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+form > div > label {
+  color: white;
+}
+
+form div > input, textarea {
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 300px;
+}
+
+form div > input:hover, textarea:hover {
+  cursor: pointer;
 }
 
 .hidden {
@@ -170,5 +208,11 @@ nav {
   .nav-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form div > input, textarea {
+    width: 276px;
   }
 }
