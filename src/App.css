@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 /* End HTML Reset */
+.about {
+  color: white;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 .App {
   background: #262626;
@@ -58,6 +66,7 @@ table {
 
 h2 {
   text-align: center;
+  color: white;
 }
 
 .home {
@@ -99,6 +108,10 @@ img {
 
 }
 
+nav {
+  margin-bottom: 15px;
+}
+
 .nav-left > a {
   color: white;
   text-decoration: underline;
@@ -130,6 +143,13 @@ img {
 
 .nav-hamburger-items > a {
   color:white;
+}
+
+.shows-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .spotify-player {
