@@ -1,5 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End HTML Reset */
+
+
+.about {
+  color: white;
+  max-width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.App {
+  background: #262626;
+}
+
+button {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 10px !important;
+}
+
+button:hover {
+  background-color: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+form > div > label {
+  color: white;
+}
+
+form div > input, textarea {
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 300px;
+}
+
+form div > input:hover, textarea:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 25px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
 .hidden {
   display: none;
+}
+
+html {
+  background: #262626;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.home-media > div {
+  margin: 10px;
+}
+
+.fade-in:hover {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img-container {
+  margin-bottom: 25px;
+  max-width: 900px;
 }
 
 .nav-container {
@@ -9,8 +208,12 @@
 
 }
 
+nav {
+  margin-bottom: 15px;
+}
+
 .nav-left > a {
-  color: black;
+  color: white;
   text-decoration: underline;
   font-weight: 700;
 }
@@ -27,11 +230,10 @@
 
 .nav-right {
   display: flex;
-  color: grey;
 }
 
 .nav-right > a {
-  color: grey;
+  color: white;
 }
 
 .nav-hamburger-items:hover {
@@ -40,7 +242,42 @@
 }
 
 .nav-hamburger-items > a {
-  color:grey;
+  color:white;
+}
+
+.shows-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+}
+
+h3 {
+  color: white;
+}
+
+.socials > div {
+  margin: 5px;
+}
+
+.spotify-player {
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,3 +294,10 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 500px) {
+  form div > input, textarea {
+    width: 276px;
+  }
+}
+

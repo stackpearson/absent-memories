@@ -6,10 +6,11 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Shows from './components/Shows';
+import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
+  return (<>
     <div className="App">
       <Navigation />
       <Routes>
@@ -18,9 +19,13 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/shows' element={<Shows />} />
       </Routes>
-      
+    <Footer />
     </div>
-  );
+    
+   
+    
+    
+  </>);
 }
 
 export default App;
