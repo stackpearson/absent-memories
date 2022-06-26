@@ -98,8 +98,18 @@ form div > input:hover, textarea:hover {
   cursor: pointer;
 }
 
+footer {
+  margin-top: 25px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
 .hidden {
   display: none;
+}
+
+html {
+  background: #262626;
 }
 
 h2 {
@@ -126,6 +136,58 @@ h2 {
 
 .home-media > div {
   margin: 10px;
+}
+
+.fade-in:hover {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
 img {
@@ -190,6 +252,28 @@ nav {
   align-items: center;
 }
 
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+}
+
+h3 {
+  color: white;
+}
+
+.socials > div {
+  margin: 5px;
+}
+
 .spotify-player {
   max-width: 550px;
   display: flex;
@@ -216,3 +300,4 @@ nav {
     width: 276px;
   }
 }
+
