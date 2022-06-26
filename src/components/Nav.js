@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import {FcExpand} from 'react-icons/fc'
 import {FcCollapse} from "react-icons/fc"
-import headerImg from '../img/header.jpeg'
+import headerImg from "../img/header.jpeg"
 
 function Navigation() {
 
@@ -22,14 +22,14 @@ function Navigation() {
         <nav>
             <div className="nav-container">
                 <div className='nav-left'>
-                    <Link className='nav-link' to='/'>Absent Memories</Link>
+                    <Link className='nav-link' to='/'>Abesnt Membories</Link>
                 </div>
                 <div className='nav-right'>
                     <Link className='nav-link' to='/'>Home</Link>
                     <Link className='nav-link' to='/shows'>Upcoming Shows</Link>
                     <Link className='nav-link' to='/about'>About</Link>
                     <Link className='nav-link' to='/contact'>Contact</Link>
-                    <Link className='nav-link' to='/'>Store</Link>
+                    <a href="https://my-store-11028518.creator-spring.com/" target="new" className='nav-link'>Store</a>
                 </div>
     
                 <div className='nav-mobile'>
@@ -50,7 +50,10 @@ function Navigation() {
                 </div>
                 
             </div>
-            <img src={headerImg} alt='picture of the band, Absent Memories'/>
+            <div className='header-img'>
+                <img src={headerImg} alt='picture of the band, Absent Memories'/>
+            </div>
+            
         </nav>
 
     );
