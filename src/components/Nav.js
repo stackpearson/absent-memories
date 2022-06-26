@@ -1,5 +1,7 @@
 import {Link} from 'react-router-dom'
-import {GiHamburgerMenu} from 'react-icons/gi'
+import {FcExpand} from 'react-icons/fc'
+import {FcCollapse} from "react-icons/fc"
+import headerImg from '../img/header.jpeg'
 
 function Navigation() {
 
@@ -32,10 +34,10 @@ function Navigation() {
     
                 <div className='nav-mobile'>
                     <div id='show-hamburger' className='nav-hamburger-icon' onClick={showResponsiveNav}>
-                        <GiHamburgerMenu />
+                        <FcExpand />
                     </div>
                     <div id='hide-hamburger' className='nav-hamburger-icon hidden' onClick={hideResponsiveNav}>
-                        <GiHamburgerMenu />
+                        <FcCollapse />
                     </div>
                     
                     <div className='nav-hamburger hidden' id='hamburger-items'>
@@ -48,6 +50,7 @@ function Navigation() {
                 </div>
                 
             </div>
+            <img src={headerImg} alt='picture of the band, Absent Memories'/>
         </nav>
 
     );
